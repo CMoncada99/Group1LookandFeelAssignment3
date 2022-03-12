@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" media=”screen” />
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Running Balance Board</a></li>
+    <li><a data-toggle="tab" href="#menu2">Department</a></li>
+    <li><a data-toggle="tab" href="#menu3">Supplier</a></li>
+    <li><a data-toggle="tab" href="#menu4">About Us</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	<table style="width:100%">
+  <tr>
+    <th>DeptID</th>
+    <th>Department Name</th>
+    <th>SupplierID</th>
+    <th>Contract Address</th>
+    <th>Payment Name</th>
+    <th>Balance</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+</p>
+    </div>
+
+
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+	<table style="width:100%">
+  <tr>
+    <th>DeptID</th>
+    <th>Department Name</th>
+    
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    
+  </tr>
+</table>
+</p>
+    </div>
+
+
+
+    <div id="menu3" class="tab-pane fade">
+      <h3>Supplier Contracts</h3>
+      <p> The San Francisco Controller's Office maintains a database of contracts and payments made to Suppliers (vendors, contractors and grantees). The Supplier Contracts include all fully executed, expenditure-only contracts, including City contracts for commodities, professional and general services, and construction from fiscal year 2018 forward.
+Data: This data set includes both departmental and citywide contracts. One department can have many than one contract, one supplier can have more than on contract, one contract has at least one department and one supplier. Our application is to dynamically display the running balance of each contract.
+
+
+<table style="width:100%">
+  <tr>
+    <th>SupplierID</th>
+    <th>Supplier Name</th>
+    <th>Supplier Type</th>
+    <th>Non-Profit</th>
+    <th>Delete</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+</p>
+    </div>
+
+  
+
+  <div id="menu4" class="tab-pane fade">
+      <h1>About Us</h1>
+	<p>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+
+<h2 style="text-align:center">Group 1</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/Claudio.jpg" alt="Claudio" height="250" width="250">
+      <div class="container">
+        <h2>Claudio Moncada</h2>
+        <p class="title">Team Member</p>
+        <p>Designed the webpage using HTML,CSS and Javascript. Was in charge of the website's user interface's design.</p>
+        <p>cmoncada@usf.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/Limei.jpeg" alt="Limei"height="250" width="400">
+      <div class="container">
+        <h2>Limei Cardenas</h2>
+        <p class="title">Team Member</p>
+        <p>Searched the data and created data model for our application,planned our web layout and our application purpose,Designed the Home page content.</p>
+        <p>cardenas25@usf.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/Sandeep.jpg" alt="Sandeep" height="250" width="250">
+      <div class="container">
+        <h2>Sandeep Kumar</h2>
+        <p class="title">Team Member</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>sandeep8@usf.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+
+ <h2>
+        GitHub:
+        <a href="https://github.com/sourabhreddy369/Assignment_LookAndFeel" style="margin-left:30px"> Assignment_LookAndFeel_Group1</a>
+    </h2>
+
+<h2>Data Model</h2>
+<img src="img/DataModel.png" alt="DataModel" height="500" width="1000">
+      <p>
+    
+  </div>
+</div>
+
+</body>
+</html>
